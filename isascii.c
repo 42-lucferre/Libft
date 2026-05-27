@@ -1,24 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   isascii.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 17:49:36 by lucferre         ###   ########.fr       */
+/*   Created: 2026/05/27 17:47:57 by lucferre          #+#    #+#             */
+/*   Updated: 2026/05/27 17:48:49 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-// # include 
-// # include
-
-int	isalpha(int c);
-int	isdigit(int c);
-int	isalnum(int c);
-int	isascii(int c);
-
-#endif
+int	isascii(int c)
+{
+	return (c >= 0 && c <= 127);
+}

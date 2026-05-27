@@ -6,11 +6,13 @@ This projects intends to teach the fundamentals of basics functions and librarie
 
 Functions added to the library:
 
-* __isalpha.c__ - checks for an alphabetic character; in the standard "C" locale, it  is  equivalent  to (isupper(c)  ||  islower(c)).
+* __isalpha(c)__ - checks for an alphabetic character; in the standard "C" locale, it  is  equivalent  to (isupper(c)  ||  islower(c)).
   
-* __isdigit.c__ - checks for a digit (0 through 9)
+* __isdigit(c)__ - checks for a digit (0 through 9)
 
-* __isalnum.c__ - checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c))
+* __isalnum(c)__ - checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c))
+
+* __isascii(c)__ - checks whether c is a 7-bit unsigned char value that fits  into  the  ASCII  character set.
 
 ## Instructions
 
