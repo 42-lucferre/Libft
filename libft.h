@@ -6,14 +6,14 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 19:21:48 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/05/27 19:34:06 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// # include 
+ # include <stddef.h>
 // # include
 
 int	ft_isalpha(int c);
