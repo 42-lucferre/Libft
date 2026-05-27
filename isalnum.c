@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isdigit.c                                          :+:      :+:    :+:   */
+/*   isalnum.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 17:17:53 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 17:33:58 by lucferre         ###   ########.fr       */
+/*   Created: 2026/05/27 16:09:59 by lucferre          #+#    #+#             */
+/*   Updated: 2026/05/27 17:43:05 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
+#include "libft.h"
+
+int	isalnum(int c)
 {
-	return (c >= '0' && c <= '9');
+	return (isalpha(c) || isdigit(c));
 }
 
 // #include <stdio.h>
 
 // int	main(void)
 // {
-// 	int		n;
 // 	char	c;
 
-// 	c = 'x';
-// 	printf("%d", isdigit(c));
+// 	c = '\n';
+// 	printf("%d", isalnum(c));
 // 	return (0);
 // }

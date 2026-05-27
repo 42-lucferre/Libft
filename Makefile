@@ -10,7 +10,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c #HEADER
+%.o: %.c #$(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

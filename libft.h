@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isdigit.c                                          :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 17:17:53 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 17:33:58 by lucferre         ###   ########.fr       */
+/*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
+/*   Updated: 2026/05/27 17:32:44 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
-{
-	return (c >= '0' && c <= '9');
-}
+#ifndef LIBFT_H
+# define LIBFT_H
 
-// #include <stdio.h>
+// # include 
+// # include
 
-// int	main(void)
-// {
-// 	int		n;
-// 	char	c;
+int	isalpha(int c);
+int	isdigit(int c);
+int	isalnum(int c);
 
-// 	c = 'x';
-// 	printf("%d", isdigit(c));
-// 	return (0);
-// }
+#endif

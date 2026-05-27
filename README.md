@@ -8,7 +8,9 @@ Functions added to the library:
 
 * __isalpha.c__ - checks for an alphabetic character; in the standard "C" locale, it  is  equivalent  to (isupper(c)  ||  islower(c)).
   
-* __isdigit.c__ - checks for a digit (0 through 9).
+* __isdigit.c__ - checks for a digit (0 through 9)
+
+* __isalnum.c__ - checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c))
 
 ## Instructions
 
