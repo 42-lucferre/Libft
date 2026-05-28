@@ -1,7 +1,7 @@
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-SRC = *.c
+SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 HEADER = libft.h
 

@@ -1,28 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 23:12:33 by lucferre         ###   ########.fr       */
+/*   Created: 2026/05/27 22:53:53 by lucferre          #+#    #+#             */
+/*   Updated: 2026/05/27 23:26:57 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stddef.h>
-// # include
+void	ft_bzero(void *s, size_t n)
+{
+	unsigned char	*t;
+	size_t			i;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *s, int c, size_t n);
-void	ft_bzero(void *s, size_t n);
+	t = (unsigned char *) s;
+	i = 0;
+	while (i < n)
+	{
+		t[i] = '\0';
+		i++;
+	}
+}
 
-#endif
+// #include <stdlib.h>
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*s;
+
+// 	s = malloc(sizeof(char) * 5);
+// 	ft_memset(s, 'z', 4);
+// 	ft_bzero(s, 2);
+// 	printf("%s", s);
+// 	return (0);
+// }
