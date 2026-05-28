@@ -3,14 +3,14 @@ CC = cc
 CFLAGS = -Wall -Werror -Wextra
 SRC = *.c
 OBJ = $(SRC:.c=.o)
-#HEADER = libft.h
+HEADER = libft.h
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c #$(HEADER)
+%.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
