@@ -24,6 +24,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_memcpy(*dest, *src, n)__ - copies _n_ bytes from memory area _src_ to memory area _dest_. The memory areas must not overlap.
 
+* __ft_memmove(*dest, *src, n)__ - copies _n_ bytes from memory area _src_ to memory area _dest_. The memory areas may overlap: copying takes place as though the bytes in _src_ are first copied into a temporary  array  that  does  not overlap _src_ or _dest_, and the bytes are then copied from the temporary array to _dest_.
+
 ## Instructions
 
 Command lines:
