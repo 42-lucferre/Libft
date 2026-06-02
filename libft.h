@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/28 22:48:50 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/06/02 19:27:51 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
 
 #endif

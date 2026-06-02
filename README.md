@@ -28,6 +28,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_strlcpy(*dst, *src, dsize)__ - copy the input string into a destination  string. If the destination buffer, limited by its size, isn't large enough to hold the copy, the resulting string is  truncated (but it is guaranteed to be null-terminated). They return the length of the total string they tried to create.
 
+* __ft_strlcat(*dst, *src, dsize)__ - catenate the input string into a destination  string. If the destination buffer, limited by its size, isn't large enough to hold the copy, the resulting string is  truncated (but it is guaranteed to be null-terminated). They return the length of the total string they tried to create. If _dsize_ isn't longer than the original _dst_ string, this function returns _dstsize_ + (size of _src_).
+
 ## Instructions
 
 Command lines:

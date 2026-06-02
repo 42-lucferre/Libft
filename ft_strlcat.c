@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/31 17:27:20 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/31 22:08:25 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/06/02 19:27:31 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 	dst[i] = '\0';
 	return (dst_len + src_len);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*s;
+// 	char	d[10];
+
+// 	d[0] = 'a';
+// 	d[1] = 'b';
+
+// 	s = "cde";
+// 	ft_strlcat(d, s, 10);
+// 	printf("%s", d);
+// 	return (0);
+// }
