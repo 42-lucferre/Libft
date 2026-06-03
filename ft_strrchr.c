@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/02 20:24:23 by lucferre          #+#    #+#             */
-/*   Updated: 2026/06/02 21:12:25 by lucferre         ###   ########.fr       */
+/*   Created: 2026/06/02 21:09:18 by lucferre          #+#    #+#             */
+/*   Updated: 2026/06/02 21:46:45 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	char	*str;
+	size_t	i;
 
-	str = (char *) s;
-	while (*str != (char) c && *str != '\0')
-		str++;
-	if (*str == '\0' && c != '\0')
-		str = NULL;
-	return (str);
+	i = 0;
+	while (*s != '\0')
+	{
+		s++;
+		i++;
+	}
+	while (*s != (char) c && i > 0)
+	{
+		s--;
+		i--;
+	}
+	if (i == 0 && *s != (char) c)
+		return (NULL);
+	return ((char *) s);
 }
 
 // #include <stdio.h>
@@ -31,8 +39,8 @@ char	*ft_strchr(const char *s, int c)
 // 	char	c;
 // 	char	*str;
 
-// 	c = 's';
-// 	str = "Teste";
-// 	printf("%s", ft_strchr(str, c));
+// 	c = 't';
+// 	str = "teste";
+// 	printf("%s", ft_strrchr(str, c));
 // 	return (0);
 // }

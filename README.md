@@ -34,7 +34,9 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_tolower(c)__ - if _c_ is an uppercase letter, returns its lowercase equivalent, if a lowercase representation exists in the current locale. Otherwise, it returns _c_.
 
-* __ft_strchr(*s, c)__ - returns  a pointer to the first occurrence of the character _c_ in the string _s_.
+* __ft_strchr(*s, c)__ - returns  a pointer to the first occurrence of the character _c_ in the string _s_, or NULL if the character is not found. The terminating null byte is considered part of the string, so that if _c_ is specified as '\0', this function return a pointer to the terminator.
+
+* __ft_strrchr(*s, c)__ - returns  a pointer to the last occurrence of the character _c_ in the string _s_, or NULL if the character is not found. The terminating null byte is considered part of the string, so that if _c_ is specified as '\0', this function return a pointer to the terminator.
 
 ## Instructions
 
