@@ -52,6 +52,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_strnstr(*haystack, *needle, len)__ - scans the first _len_ bytes for the  first occurrence of the substring _needle_ in the string _haystack_. The terminating null bytes ('\0') are not compared.
 
+* __ft_atoi( *nptr)__ - converts the initial portion of the string pointed to by _nptr_ to int. The string may begin with an arbitrary amount of white space ('\f', '\n', '\r', '\t', '\v' or space) followed by a single optional '+' or '-' sign.
+
 ## Instructions
 
 Command lines:
