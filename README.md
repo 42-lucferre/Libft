@@ -50,6 +50,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_memcmp(*s1, *s2, n)__ - compares the first _n_ bytes (each interpreted as unsigned char) of the memory areas _s1_ and _s2_. Returns an integer less than, equal to, or greater than zero if the first _n_ bytes of _s1_ is found, respectively, to be less than, to match, or be greater than the first _n_ bytes of _s2_. For a nonzero return value, the sign is determined by the sign of the difference between the first pair of bytes (interpreted as unsigned char) that differ in _s1_ and _s2_. If _n_ is zero, the return value is zero.
 
+* __ft_strnstr(*haystack, *needle, len)__ - scans the first _len_ bytes for the  first occurrence of the substring _needle_ in the string _haystack_. The terminating null bytes ('\0') are not compared.
+
 ## Instructions
 
 Command lines:
