@@ -58,6 +58,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_strdup(*s)__ - returns a pointer to a new string which is a duplicate of the string _s_. Memory for the new string is obtained with malloc(), and can be freed with free(). On success, the function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available.
 
+* __ft_substr(*s, start, len)__ - Allocates memory (using malloc()) and returns a substring from the string _’s’_. The substring starts at index _'start’_ and has a maximum length of _’len’_
+
 ## Instructions
 
 Command lines:
