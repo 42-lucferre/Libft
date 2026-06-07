@@ -77,6 +77,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_striteri__:
   * void ft_striteri(char *s, void (\*f)(unsigned int, char\*)) - applies the function _’f’_ to each character of the string passed as argument, passing its index as the first argument. Each character is passed by address to _’f’_ so it can be modified if necessary.
+
+* __ft_putchar_fd__:
+  * void ft_putchar_fd(char c, int fd) - outputs the character _’c’_ to the specified file descriptor.
   
 ## Instructions
 
