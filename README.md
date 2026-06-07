@@ -75,6 +75,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 * __ft_strmapi__:
   * char \*ft_strmapi(char const \*s, char (*f)(unsigned int, char)) - Applies the function _f_ to each character of the string _s_, passing its index as the first argument and the character itself as the second. A new string is created (using malloc()) to store the results from the successive applications of _f_.
 
+* __ft_striteri__:
+  * void ft_striteri(char *s, void (\*f)(unsigned int, char\*)) - applies the function _’f’_ to each character of the string passed as argument, passing its index as the first argument. Each character is passed by address to _’f’_ so it can be modified if necessary.
+  
 ## Instructions
 
 Command lines:
