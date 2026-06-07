@@ -69,6 +69,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 * __ft_split__:
   * char **ft_split(char const *s, char c) - allocates memory (using malloc()) and returns an array of strings obtained by splitting _’s’_ using the character _’c’_ as a delimiter. The array must end with a NULL pointer.
 
+* __ft_itoa__:
+  * char *ft_itoa(int n) - allocates memory (using malloc()) and returns a string representing the integer received as an argument. Negative numbers must be handled.
+
 ## Instructions
 
 Command lines:
