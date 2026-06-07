@@ -80,6 +80,15 @@ Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_putchar_fd__:
   * void ft_putchar_fd(char c, int fd) - outputs the character _’c’_ to the specified file descriptor.
+
+* __ft_putstr_fd__:
+  * void ft_putstr_fd(char *s, int fd) - outputs the string _’s’_ to the specified file descriptor.
+
+* __ft_putendl_fd__:
+  * void ft_putendl_fd(char *s, int fd) - outputs the string _’s’_ to the specified file descriptor followed by a newline.
+
+* __ft_putnbr_fd__:
+  * void ft_putnbr_fd(int n, int fd) - outputs the integer _’n’_ to the specified file descriptor.
   
 ## Instructions
 
