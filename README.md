@@ -94,13 +94,16 @@ Functions added to the library (descriptions from "man" and from Subject):
   * t_list *ft_lstnew(void \*content) - allocates memory (using malloc()) and returns a new node. The _’content’_ member variable is initialized with the given parameter _’content’_. The variable _’next’_ is initialized to NULL.
 
 * __ft_lstadd_front__:
-  * void ft_lstadd_front(t_list **lst, t_list *new) - Adds the node _’new’_ at the beginning of the list.
+  * void ft_lstadd_front(t_list **lst, t_list *new) - adds the node _’new’_ at the beginning of the list.
 
 * __ft_lstsize__:
   * int ft_lstsize(t_list *lst) - counts the number of nodes in the list.
 
 * __ft_lstlast__:
   * t_list *ft_lstlast(t_list \*lst) - returns the last node of the list.
+
+* __ft_lstadd_back__
+  * void ft_lstadd_back(t_list **lst, t_list *new) - adds the node _’new’_ at the end of the list.
 
 ## Instructions
 
