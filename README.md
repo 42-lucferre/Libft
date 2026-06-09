@@ -112,7 +112,10 @@ Functions added to the library (descriptions from "man" and from Subject):
   * void ft_lstclear(t_list **lst, void (\*del)(void\*)) - deletes and frees the given node and all its successors, using the function _’del’_ and free(). Finally, set the pointer to the list to NULL.
 
 * __ft_lstiter__:
-  * void ft_lstiter(t_list \*lst, void (*f)(void \*)) - Iterates through the list _’lst’_ and applies the function _’f’_ to the content of each node.
+  * void ft_lstiter(t_list \*lst, void (*f)(void \*)) - iterates through the list _’lst’_ and applies the function _’f’_ to the content of each node.
+
+* __ft_lstmap__:
+  * t_list \*ft_lstmap(t_list \*lst, void \*(*f)(void \*), void (*del)(void \*)) - iterates through the list _’lst’_, applies the function _’f’_ to each node’s content, and creates a new list resulting of the successive applications of the function _’f’_. The _’del’_ function is used to delete the content of a node if needed.
 
 ## Instructions
 
